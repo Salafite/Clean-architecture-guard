@@ -4,10 +4,6 @@ A master opencode skill combining architectural restructuring with strict clean-
 
 ## Installation
 
-### Prerequisites
-
-- [opencode](https://opencode.ai) CLI tool installed and configured.
-
 ### Option 1: Clone into your project (recommended)
 
 ```bash
