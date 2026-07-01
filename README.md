@@ -10,14 +10,14 @@ A master opencode skill combining architectural restructuring with strict clean-
 
 ### Option 1: Clone into your project (recommended)
 
-`ash
+```bash
 cd your-project/
 git submodule add https://github.com/Salafite/Clean-architecture-guard.git skills/clean-architecture-guard
-`
+```
 
-Then reference it in your opencode.json or .opencode/skills.json:
+Then reference it in your `opencode.json` or `.opencode/skills.json`:
 
-`json
+```json
 {
   "skills": [
     {
@@ -26,15 +26,15 @@ Then reference it in your opencode.json or .opencode/skills.json:
     }
   ]
 }
-`
+```
 
 ### Option 2: Copy the skill folder directly
 
-`ash
+```bash
 cd your-project/
 git clone https://github.com/Salafite/Clean-architecture-guard.git skills/clean-architecture-guard
 rm -rf skills/clean-architecture-guard/.git
-`
+```
 
 Then reference it in your opencode config as described above.
 
@@ -42,7 +42,7 @@ Then reference it in your opencode config as described above.
 
 Clone to any location on your machine and point the skill location in your opencode config:
 
-`json
+```json
 {
   "skills": [
     {
@@ -51,13 +51,13 @@ Clone to any location on your machine and point the skill location in your openc
     }
   ]
 }
-`
+```
 
 ## Usage
 
 Invoke the skill in your opencode session whenever you need to:
 
-- **Refactor existing code** into a clean layered architecture (controllers/, services/, epositories/, clients/, models/)
+- **Refactor existing code** into a clean layered architecture (`controllers/`, `services/`, `repositories/`, `clients/`, `models/`)
 - **Review generated code** before committing or merging
 - **Write new features** with strict clean-code and SOLID enforcement
 - **Audit LLM-generated code** for the 14 systematic AI failure modes
@@ -71,15 +71,15 @@ The skill works in two modes:
 
 | File | Purpose |
 |------|---------|
-| SKILL.md | Master skill combining architecture refactoring + clean code enforcement |
-| gents/openai.yaml | Agent display metadata |
-| eferences/naming-and-functions.md | Clean Code Ch. 2 & 3 — naming, function size, parameters |
-| eferences/comments-and-formatting.md | Clean Code Ch. 4 & 5 — when to comment, style matching |
-| eferences/solid.md | SOLID principles with AI-specific breakage patterns |
-| eferences/dry-kiss-yagni.md | DRY/KISS/YAGNI with Sandi Metz wrong-abstraction corollary |
-| eferences/ai-failure-modes.md | 14 systematic LLM failure modes with research citations |
-| eferences/review-checklist.md | Structured walk-through for review mode |
-| eferences/sources.md | Full bibliography of cited works |
+| `SKILL.md` | Master skill combining architecture refactoring + clean code enforcement |
+| `agents/openai.yaml` | Agent display metadata |
+| `references/naming-and-functions.md` | Clean Code Ch. 2 & 3 — naming, function size, parameters |
+| `references/comments-and-formatting.md` | Clean Code Ch. 4 & 5 — when to comment, style matching |
+| `references/solid.md` | SOLID principles with AI-specific breakage patterns |
+| `references/dry-kiss-yagni.md` | DRY/KISS/YAGNI with Sandi Metz wrong-abstraction corollary |
+| `references/ai-failure-modes.md` | 14 systematic LLM failure modes with research citations |
+| `references/review-checklist.md` | Structured walk-through for review mode |
+| `references/sources.md` | Full bibliography of cited works |
 
 ## Architecture principles enforced
 
